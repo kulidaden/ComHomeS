@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ComHome</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+
+</head>
+<body>
+   <header>
+    <div id='logo' onclick="slowScroll('#top')">
+        <span style="color: #fff; text-decoration: underline;text-decoration-color: #273600; ">ComHome</span>
+    </div>
+    <div id="about">
+
+        <a href="/" style="padding-left: 400px;text-decoration: underline;text-decoration-color: #273600;">На головну</a>
+        <a href="{% url 'about' %}" style="text-decoration: underline;text-decoration-color: #273600;" title="Контакти">Галерея</a>
+        <a href="#" onclick="slowScroll('#main')" style="text-decoration: underline;text-decoration-color: #273600;" title="Контакти">Про нас</a>
+        <a href="#" title="Контакти" style="text-decoration: underline;text-decoration-color: #273600;" onclick="slowScroll('#main')">Контакти</a>
+        <a href="{% url 'create' %}" style="text-decoration: underline;text-decoration-color: #273600;" title="Контакти">Анкета</a>
+    </div>
+   </header>
+
+
+   <div id="top">
+       <h1 ><h2 >ComfortableHome</h2></h1>
+       <h3 >комфорт вашого щастя!</h3>
+   </div>
+   <div id="main" style="color:#a6ff9e">
+       <div class="intro" >
+           <h1 style="
+             width: 1200px;
+            margin-top: -75px;
+                margin-left: -90px;">Команда ComHome облаштує комфорт вашого будинку</h1>
+           <h3 style="
+                margin-top: 20px;
+                text-decoration: underline;"
+           >Контакти</h3>
+       </div>
+       <div class="intro" style="
+    width: 400px;
+    margin-left: 600px;">
+           <span style="color:#a6ff9e">
+               <h3 style="
+                margin-top: -20px;text-decoration: underline;"
+               >Чому команда ComHome?</h3><br>
+               Наша команда надає широкий спектр послуг:<br>
+               <a href="#" onclick="slowScroll('#im1')" style="text-decoration: underline;text-decoration-color: #273600; color:#a6ff9e;">- Ландшафтний дизайн</a><br>
+               <a href="#" onclick="slowScroll('#im2')" style="text-decoration: underline;text-decoration-color: #273600; color:#a6ff9e;">- Облаштування інтер'єру</a><br>
+                <a href="#" onclick="slowScroll('#im3')" style="text-decoration: underline;text-decoration-color: #273600; color:#a6ff9e;">- Охоронна система</a><br>
+                   <a href="#" onclick="slowScroll('#im4')" style="text-decoration: underline;text-decoration-color: #273600; color:#a6ff9e;">- Клінінг</a><br></span>
+       </div>
+       <div class="intro" style="margin-top:-90px;" >
+           <h3 style="color: #e7a1a1;">Instagram: _.k._.o.s.m.o._.s._</h3><br>
+           <h3 style="color: #7d87ff;">Facebook: Куліда Денис</h3><br>
+           <h3 style="color: #00dcff;">Telegram: +380638492415</h3><br>
+           <h3 style="color: #fff;">Мобільний номер: +380974329340</h3>
+       </div>
+   </div>
+   <div id="overview" style="height: 2300px;">
+       <div id="im1" class="imm">
+           <a href="{% url 'about' %}"><h1 style="width: 500px;margin-inline-start: -600px; color: #8deb75;
+           text-decoration: underline; text-decoration-color: chartreuse;">
+               Ландшафтний дизайн<br>
+               <br>
+               Наша команда здатна приголомшити вас дизайнирськими рішеннями, змінивши навколишній інтер'єр вашого обійстя</h1></a>
+       </div>
+
+       <div id="im2" class="imm">
+           <a href="{% url 'about' %}"><h1 style="width: 600px;margin-inline-start: 600px; color: #fff57e;
+           text-decoration: underline; text-decoration-color: #f7d400;">
+               Облаштування інтер'єру<br>
+               <br>
+               Дизайнери компанії допоможуть обрати стиль для вашої оселі та облаштувати інтер'єр будинку за вашим смаком
+           </h1></a>
+       </div>
+
+       <div id="im3" class="imm">
+           <a href="{% url 'about' %}"><h1 style="width: 600px;margin-inline-start: -600px; color: #ffffff;
+           text-decoration: underline; text-decoration-color: #6e6ff9;">
+               Охоронна система<br>
+               <br>
+               Наша система охорони забезпечить спокій та безпеку вашої родини
+           </h1></a>
+       </div>
+
+       <div id="im4" class="imm">
+           <a href="{% url 'about' %}"> <h1 style="width: 600px;margin-inline-start: 600px; color: #98fffa;
+           text-decoration: underline; text-decoration-color: #3dfff2;">
+               Клінінг<br>
+               <br>
+               Виїзна команда сеціалістів організує чистоту вашого будинку та прилеглої теритиорії
+           </h1></a>
+       </div>
+
+   </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+   <script>
+    function slowScroll(id){
+        $('html, body').animate({
+            scrollTop:$(id).offset().top
+        }, 500);
+    }
+
+    $(document).on("scroll",function (){
+        if($(window).scrollTop() === 0)
+            $("header").removeClass("fixed");
+        else
+            $("header").attr("class","fixed");
+        });
+   </script>
+</body>
+</html>
