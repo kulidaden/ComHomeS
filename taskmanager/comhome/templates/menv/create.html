@@ -29,11 +29,11 @@
     <form method="post" id="forms">
         {% csrf_token %}
         {{ form.title }}<br>
+        {{ form.number }}<br>
         {{ form.task }}<br>
-        <button type="submit" id="but" class="btn btn-success">Додати</button>
-        <h1>Дякую за ваш запит!</h1>
-        <h2>Ми вам зателефонуємо😁</h2>
-        <span>{{ error }}</span>
+        <button type="submit" id="but" class="btn btn-success">Додати</button><br>
+        <h1><span>{{ thx }}</span></h1>
+        <h1><span>{{ error }}</span></h1>
     </form>
         <script>function slowScroll(id){
         $('html, body').animate({

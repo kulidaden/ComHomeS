@@ -1,5 +1,8 @@
 from django.contrib import admin
 from .models import Task
 
-admin.site.register(Task)
-# Register your models here.
+class TaskAdmin(admin.ModelAdmin):
+    list_display = ("title", "number", "task")
+
+
+admin.site.register(Task, TaskAdmin)

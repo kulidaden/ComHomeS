@@ -12,19 +12,21 @@ def about(request):
 
 def create(request):
     error=''
+    thx=''
     if request.method=='POST':
         form=TaskForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('home')
+            thx='Дякую за ваш запит! \nМи вам зателефонуємо😁'
         else:
-            error='Форма була не коректною'
+            error='Форма була не коректною!'
 
 
     form  = TaskForm()
     context={
         'form': form,
-        'error': error
+        'error': error,
+        'thx':thx
     }
     return render(request,'menv/create.html',context)
 
