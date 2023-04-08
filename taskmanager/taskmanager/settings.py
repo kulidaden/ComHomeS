@@ -1,6 +1,6 @@
 import os
 from pathlib import Path
-from .Secret_key import *
+from .gdflg import *
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -11,7 +11,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static")
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = secret_key1
+SECRET_KEY = urls_1
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
