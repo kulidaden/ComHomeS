@@ -4,8 +4,7 @@ __pycache__/
 *$py.class
 
 .idea/
-
-venv/
+Secret_key.py
 # C extensions
 *.so
 
