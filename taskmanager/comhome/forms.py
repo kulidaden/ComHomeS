@@ -9,9 +9,9 @@ def title_not_str(value):
     """
     Ця функція переверіє на коректність заповненого поля title
     """
-    if not str(value).isalpha():
-        raise ValidationError({'title':"Ім'я та фамілія має містити тільки букви!"})
-
+    for i in str(value):
+        if i in '0123456789!@#$%^&*()_+:;"\'':
+            raise ValidationError({'title': "Ім'я та фамілія має містити тільки букви!"})
 class TaskForm(forms.ModelForm):
     class Meta:
         model = Task
