@@ -7,7 +7,7 @@ https://denys1122.pythonanywhere.com
 
 ## Контакти
 Telegram: @DeLemse
-#####################
+##### .
 # Name and description
 ## ComHomes
 This site is about creating your dream home, you can choose any landscape design, interior or suggest your own;  order a security system or cleaning.  You can view everything in the "Gallery" section.  In order to place an order, you need to go to the "Questionnaire" section and fill out the form.
