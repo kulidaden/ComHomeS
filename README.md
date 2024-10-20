@@ -31,7 +31,12 @@ Telegram: @DeLemse
 
 <table>
   <td>
-    This site is about creating your dream home, you can choose any landscape design, interior or suggest your own;  order a security system or cleaning.  You can view everything in the "Gallery" section.  In order to place an order, you need to go to the "Questionnaire" section and fill out the form.
+    This site is about creating your dream home, <br>
+    you can choose any landscape design, interior or <br>
+    suggest your own;  order a security system or cleaning. <br>
+    You can view everything in the "Gallery" section. <br>
+    In order to place an order, you need to go to the <br>
+    "Questionnaire" section and fill out the form.
   </td>
   <td>
     <img width="100%" height='100%' src="./img_git/galery.jpg"
