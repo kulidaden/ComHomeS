@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="450px" height='250px' src="./img_git/comhome.jpg" align="center" alt="ComHomes" />
+  <img width="700px" height='350px' src="./img_git/comhome.jpg" align="center" alt="ComHomes" />
   <h2 align="center">ComHomes</h2>
 </p>
 <h2><p align="center">🌸Комфорт вашого щастя🌼</p></h2>
