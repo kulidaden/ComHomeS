@@ -13,7 +13,7 @@
     вам потрібно перейти в розділ "Анкета" та заповнити форму.
   </td>
   <td>
-    <img width="550px" height='350px' src="./img_git/galery.jpg"
+    <img width="550px" height='250px' src="./img_git/galery.jpg"
   </td>
 </table>
 
